@@ -132,11 +132,30 @@ body{
         & h2{
             width: 100%;
             padding: 0;
-            font-weight: 700;
+            font-weight: 600;
         }
         & p{
             padding: 0 10px 0 0;
             width: 100%;
         }
+    }
+}
+
+#we-ensure{
+    text-transform: uppercase;
+    background-color: var(--bg-primary);
+
+    & h3,
+    & p{
+        margin: 0;
+        padding: 0;
+    }
+
+    & h3{
+        font-weight: 600;
+    }
+
+    & p{
+        font-weight: 450;
     }
 }
