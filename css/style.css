@@ -2,15 +2,17 @@
     --text-color-primary: #000;
     --text-color-secondary: #705400;
     --bg-primary: #FDC51D;
+    --bg-primary-05: rgba(253, 197, 29, 0.5);
 }
-html{
-    font-family: Poppins, sans-serif;
-    background: #fefefe;
-}
+
 *{
     margin: 0;
     padding: 0;
-    color: #fefefe;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body{
+    background: #fefefe;
 }
 
 #menu-logo{
@@ -90,5 +92,51 @@ html{
 
     & #banner-content{
         max-width: 1200px;
+    }
+}
+
+#about-us{
+    height: calc(100vh - 9.45rem);
+    color: var(--text-color-primary);
+
+    & #about-img{
+        right: 50%;
+        transform: translateX(-27%);
+
+        & #img-wrapper{
+            position: relative;
+            width: fit-content;
+            z-index: 1;
+
+            & img{
+                max-height: 300px;
+            }
+
+            &::before{
+                position: absolute;
+                content: '';
+                top: 20%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                border: 1.5rem solid var(--bg-primary-05);
+                z-index: -1;
+            }
+        }
+    }
+
+    & #about-text{
+        max-width: 800px;
+        margin-top: 6rem;
+
+        & h2{
+            width: 100%;
+            padding: 0;
+            font-weight: 700;
+        }
+        & p{
+            padding: 0 10px 0 0;
+            width: 100%;
+        }
     }
 }
