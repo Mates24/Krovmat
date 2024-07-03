@@ -145,6 +145,10 @@ body{
     text-transform: uppercase;
     background-color: var(--bg-primary);
 
+    & .col{
+        max-width: 300px;
+    }
+
     & h3,
     & p{
         margin: 0;
@@ -157,5 +161,44 @@ body{
 
     & p{
         font-weight: 450;
+    }
+}
+#our-services{
+    margin-top: 6rem;
+
+    & .service{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        height: max-content;
+        text-align: end;
+
+        &:nth-child(even){
+            text-align: start;
+        }
+
+        & .img-wrapper img{
+            max-width: 350px;
+        }
+
+        & .text-wrapper{
+            --padding: 25px;
+            max-width: 500px;
+            height: 100%;
+            
+            &:nth-child(odd){
+                padding-left: var(--padding);
+                border-left: 5px solid var(--bg-primary);
+            }
+            &:nth-child(even){
+                padding-right: var(--padding);
+                border-right: 5px solid var(--bg-primary);
+            }
+
+            & p{
+                margin: 0;
+            }
+        }
     }
 }
