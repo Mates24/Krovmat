@@ -164,33 +164,46 @@ body{
 }
 #our-services{
     margin-top: 6rem;
+    row-gap: 5rem;
+
+    & h3{
+        font-weight: 600;
+        text-decoration: underline 3px solid var(--bg-primary);
+        text-transform: uppercase;
+    }
 
     & .service{
         display: flex;
         align-items: center;
         justify-content: space-between;
         max-width: 1200px;
-        height: max-content;
+        height: 200px;
         text-align: end;
-
+        overflow: hidden;
+        
         &:nth-child(even){
             text-align: start;
         }
-
+        
         & .img-wrapper img{
             max-width: 350px;
         }
-
+        
         & .text-wrapper{
             --padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             max-width: 500px;
             height: 100%;
             
             &:nth-child(odd){
+                text-align: start;
                 padding-left: var(--padding);
                 border-left: 5px solid var(--bg-primary);
             }
             &:nth-child(even){
+                text-align: end;
                 padding-right: var(--padding);
                 border-right: 5px solid var(--bg-primary);
             }
