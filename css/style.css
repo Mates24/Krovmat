@@ -38,7 +38,7 @@ body{
     }
 }
 
-#menu-links{
+#navbar{
     width: 75%;
     background-color: var(--bg-primary);
 
@@ -70,7 +70,6 @@ body{
                 }
                 
                 &:hover{
-                    font-weight: 700;
                     color: var(--text-color-secondary);
                     
                     &::before{
