@@ -15,6 +15,10 @@ body{
     background: #fefefe;
 }
 
+header{
+    box-shadow: 0px 0 10px black;
+}
+
 #menu-logo{
     position: relative;
     width: 25%;
@@ -163,7 +167,7 @@ body{
     }
 }
 #our-services{
-    margin-top: 6rem;
+    margin-top: 5rem;
     row-gap: 5rem;
 
     & h3{
@@ -211,6 +215,19 @@ body{
             & p{
                 margin: 0;
             }
+        }
+    }
+}
+
+#gallery{
+    margin-top: 6rem;
+    
+    & div{
+        grid-template-columns: repeat(auto-fit, minmax(calc(100% / 4), 1fr));
+        
+        & img{
+            width: 100%;
+            cursor: pointer;
         }
     }
 }
