@@ -10,6 +10,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 6.5rem;
 }
 body{
     background: #fefefe;
@@ -95,6 +97,21 @@ header{
 
     & #banner-content{
         max-width: 1200px;
+        
+
+        & h1{
+            position: relative;
+            color: var(--bg-primary);
+        }
+        & span{
+            position: absolute;
+            font-family: "Dancing Script", cursive;
+            font-size: 3rem;
+            font-weight: bolder;
+            top: 10px;
+            left: -.4em;
+            transform: rotate(-25deg);
+        }
     }
 }
 
