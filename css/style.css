@@ -221,6 +221,12 @@ header{
 
 #gallery{
     margin-top: 6rem;
+
+    & h3{
+        font-weight: 600;
+        text-decoration: underline 3px solid var(--bg-primary);
+        text-transform: uppercase;
+    }
     
     & div{
         grid-template-columns: repeat(auto-fit, minmax(calc(100% / 4), 1fr));
@@ -228,6 +234,56 @@ header{
         & img{
             width: 100%;
             cursor: pointer;
+        }
+    }
+}
+
+#contact{
+
+    & div:nth-child(1){
+        color: #fefefe;
+        background-color: var(--text-color-primary);
+    
+        & div{
+            width: calc(100% / 3);
+    
+            & img {
+                max-width: 75%;
+            }
+        }
+    
+    
+        & h5{
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    
+        & ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+    
+            & li{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    & div#web-created{
+        background-color: var(--bg-primary);
+
+        & h5{
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 0;
+            padding-block: .3rem;
+
+            & span{
+                background: -webkit-linear-gradient(0deg, rgb(0, 55, 255) 0%, rgb(255, 0, 0) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }
