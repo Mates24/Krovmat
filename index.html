@@ -11,40 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="javascript/script.js"></script>
     <script src="javascript/gallery.js"></script>
 </head>
 <body>
-    <header class="d-flex fixed-top">
-        <div class="d-flex align-items-center ps-5" id="menu-logo">
-            <img src="images/KROVMAT.png" alt="KROVMAT" class="img-fluid">
+    <header class="header">
+        <div class="menu-logo" id="menu-logo">
+            <img src="images/KROVMAT.png" alt="KROVMAT">
         </div>
-        <nav class="d-flex align-items-center justify-content-center pe-5" id="navbar">
-            <ul class="d-flex gap-5 align-items-center justify-content-end my-3 p-0" id="links">
+        <nav class="navbar" id="navbar">
+            <ul class="links" id="links">
                 <li><a href="#">Domov</a></li>
                 <li><a href="#about-us">O firme</a></li>
                 <li><a href="#we-ensure">Služby</a></li>
                 <li><a href="#gallery">Galéria</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#foot">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="d-grid align-items-center ps-5" id="banner">
+        <section class="banner" id="banner">
             <div id="banner-content">
-                <h1 class="pt-5 ps-5 m-0"><span>Robíme</span>strešné a klampiarské <br> práce na mieru</h1>
+                <h1><span>Robíme</span>strešné a klampiarské <br> práce na mieru</h1>
             </div>
         </section>
-        <section class="d-flex  flex-column m-5 justify-content-center align-items-center" id="about-us">
-            <div class="d-flex align-items-center justify-content-center" id="about-img">
+        <section class="about-us" id="about-us">
+            <div class="about-img" id="about-img">
                     <div id="img-wrapper">
-                        <img src="images/Pokrývačstvo.jpg" alt="Pokrývačstvo" class="img-fluid">
+                        <img src="images/Pokrývačstvo.jpg" alt="Pokrývačstvo">
                     </div>
             </div>
-            <div class="row d-flex flex-column text-start" id="about-text">
+            <div class="about-text" id="about-text">
                 <h2>Kto sme</h2>
                 <p>Naša firma sa venuje realizácii striech už od roku 1998. 
                     Začínali sme hydroizoláciami rovných striech ale postupom času sme 
@@ -53,12 +52,12 @@
                 </p>
             </div>
         </section>
-        <section class="d-flex flex-column" id="services">
-            <section class="row container-fluid m-0 py-5 text-center justify-content-center align-items-center" id="we-ensure">
-                <div class="row mb-5 align-items-center justify-content-center">
-                    <h3 class="col">Zaistíme pre Vás</h3>
+        <section class="services" id="services">
+            <article class="we-ensure" id="we-ensure">
+                <div class="row">
+                    <h2>Zaistíme pre Vás</h2>
                 </div>
-                <div class="row mb-5 justify-content-center">
+                <div class="row">
                     <div class="col">
                         <p>Kompletnú dodávku a odbornú pokládku</p>
                     </div>
@@ -72,7 +71,7 @@
                         <p>Kompletné tesárske práce</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col">
                         <p>Tepelné izolácie</p>
                     </div>
@@ -86,9 +85,9 @@
                         <p>Kompletné výškové práce</p>
                     </div>
                 </div>
-            </section>
-            <section class="row container-fluid justify-content-center align-items-center" id="our-services">
-                <h3 class="text-center">Naše služby</h3>
+            </article>
+            <article class="our-services" id="our-services">
+                <h2>Naše služby</h2>
                 <div class="service">
                     <div class="img-wrapper">
                         <img src="images/Krov.jpg" alt="">
@@ -134,46 +133,48 @@
                         <img src="images/Izolácia 2.jpg" alt="">
                     </div>
                 </div>
-            </section>
+            </article>
         </section>
         <section id="gallery">
-            <h3 class="text-center mb-3">Galéria</h3>
-            <div class="d-grid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
-                <img src="images/Foto 2.jpg" alt="" class="img-fluid">
+            <h2>Galéria</h2>
+            <div>
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
+                <img src="images/Foto 2.jpg" alt="">
             </div>
         </section>
     </main>
-    <footer id="contact">
-        <div class="d-flex justify-content-center align-items-center py-5 px-5">
-            <div class="d-flex flex-column align-items-center">
-                <img src="images/KROVMAT.png" alt="KROVMAT" class="img-fluid">
+    <footer id="foot">
+        <div class="contact">
+            <div class="contact-img">
+                <img src="images/KROVMAT.png" alt="KROVMAT">
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <h5>Tu nás nájdete</h5>
-                <ul>
-                    <li>KROVMAT s.r.o.</li>
-                    <li>Stojšova 1003/8</li>
-                    <li>Liptovský Mikuláš</li>
-                    <li>031 04</li>
-                </ul>
-            </div>
-            <div class="d-flex flex-column align-iems-center align-self-start">
-                <h5>Kontaktujte nás</h5>
-                <ul>
-                    <li>+421 905 343 322</li>
-                    <li>matejcik@krovmat.eu</li>
-                </ul>
+            <div class="contact-info">
+                <div>
+                    <h3>Tu nás nájdete</h3>
+                    <ul>
+                        <li>KROVMAT s.r.o.</li>
+                        <li>Stojšova 1003/8</li>
+                        <li>Liptovský Mikuláš</li>
+                        <li>031 04</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontaktujte nás</h3>
+                    <ul>
+                        <li>+421 905 343 322</li>
+                        <li>matejcik@krovmat.eu</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="web-created">
-            <h5>Web created by <span>Mathias Matejčík</span></h5>
+            <h4>Web created by <span>Mathias Matejčík</span></h4>
         </div>
     </footer>
 </body>
