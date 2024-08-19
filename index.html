@@ -13,37 +13,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js"></script>
-    <script src="javascript/gallery.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="menu-logo" id="menu-logo">
             <img src="images/KROVMAT.png" alt="KROVMAT">
         </div>
-        <nav class="navbar" id="navbar">
-            <ul class="links" id="links">
+        <nav class="navbar">
+            <ul class="links">
                 <li><a href="#">Domov</a></li>
                 <li><a href="#about-us">O firme</a></li>
-                <li><a href="#we-ensure">Služby</a></li>
+                <li><a href="#services">Služby</a></li>
                 <li><a href="#gallery">Galéria</a></li>
                 <li><a href="#foot">Kontakt</a></li>
             </ul>
+            <button class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </nav>
     </header>
     <main>
         <section class="banner" id="banner">
-            <div id="banner-content">
+            <div class="banner-content">
                 <h1><span>Robíme</span>strešné a klampiarské <br> práce na mieru</h1>
             </div>
         </section>
         <section class="about-us" id="about-us">
-            <div class="about-img" id="about-img">
-                    <div id="img-wrapper">
-                        <img src="images/Pokrývačstvo.jpg" alt="Pokrývačstvo">
-                    </div>
+            <div class="about-img">
+                <div class="img-wrapper">
+                    <img src="images/Pokrývačstvo.jpg" alt="Pokrývačstvo">
+                </div>
             </div>
-            <div class="about-text" id="about-text">
+            <div class="about-text">
                 <h2>Kto sme</h2>
                 <p>Naša firma sa venuje realizácii striech už od roku 1998. 
                     Začínali sme hydroizoláciami rovných striech ale postupom času sme 
@@ -53,7 +56,7 @@
             </div>
         </section>
         <section class="services" id="services">
-            <article class="we-ensure" id="we-ensure">
+            <article class="we-ensure">
                 <div class="row">
                     <h2>Zaistíme pre Vás</h2>
                 </div>
@@ -86,7 +89,7 @@
                     </div>
                 </div>
             </article>
-            <article class="our-services" id="our-services">
+            <article class="our-services">
                 <h2>Naše služby</h2>
                 <div class="service">
                     <div class="img-wrapper">
@@ -135,7 +138,7 @@
                 </div>
             </article>
         </section>
-        <section id="gallery">
+        <section class="gallery" id="gallery">
             <h2>Galéria</h2>
             <div>
                 <img src="images/Foto 2.jpg" alt="">
@@ -186,5 +189,7 @@
             <h4>Web created by <span>Mathias Matejčík</span></h4>
         </div>
     </footer>
+    
+    <script src="javascript/script.js"></script>
 </body>
 </html>
