@@ -128,7 +128,7 @@ body{
 
 
 .banner{
-    display: grid;
+    display: flex;
     align-items: center;
     padding-inline-start: 4rem;
     height: 100vh;
@@ -508,6 +508,10 @@ body{
             display: flex;
             z-index: 100;
         }
+    }
+
+    .banner{
+
     }
 
 }
