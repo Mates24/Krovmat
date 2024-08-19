@@ -131,7 +131,7 @@ body{
     display: flex;
     align-items: center;
     padding-inline-start: 4rem;
-    height: 100vh;
+    height: 100dvh;
     background-image: url(../images/Klampiarstvo\ 1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 9.25rem);
+    height: calc(100dvh - 9.25rem);
     margin-block: 3rem;
     color: var(--text-color-primary);
 
