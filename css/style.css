@@ -525,6 +525,8 @@ body {
   }
 
   .ask-question {
+    padding: 4rem 3rem;
+
     & h2 {
       min-width: 600px;
     }
