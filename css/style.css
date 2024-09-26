@@ -525,7 +525,7 @@ body {
   }
 
   .about-us {
-    height: calc(100dvh - 10rem);
+    height: calc(50dvh - 10rem);
 
     & .about-img {
       display: flex;
@@ -602,4 +602,5 @@ body {
 }
 
 @media (max-width: 600px) {
+  
 }
