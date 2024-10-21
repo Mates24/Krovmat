@@ -7,6 +7,7 @@
   --text-weight-600: 600;
   --text-weight-700: 700;
   --text-weight-800: 800;
+  --sections-gap: 3rem;
 }
 
 * {
@@ -93,6 +94,7 @@ body {
 
 .banner{
   height: calc(100vh - 3rem);
+  margin-bottom: var(--sections-gap);
 
   & .banner-content{
     display: grid;
@@ -116,5 +118,81 @@ body {
         transform: translateX(-50%);
       }
     }
+  }
+}
+
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--sections-gap);
+  
+  & .about-img{
+    margin-bottom: 1rem;
+    
+    & .img-wrapper{
+      position: relative;
+      max-width: 250px;
+      
+      & img{
+        width: 100%;
+      }
+
+      &  div{
+        position: absolute;
+        padding: .3rem .6rem;
+        width: fit-content;
+        text-align: center;
+        font-size: .9rem;
+        border-radius: 5px;
+        background-color: #f1efef;
+        animation: fadeIn 4000ms infinite;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        
+        &:nth-child(2){
+          top: -1rem;
+          left: -1.5rem;
+        }
+
+        &:nth-child(3){
+          bottom: -0.5rem;
+          right: -3rem;
+          animation-delay: 1000ms;
+        }
+      }
+    }
+  }
+
+  & .about-text{
+    text-align: center;
+    max-width: 300px;
+
+    & h2{
+      text-transform: uppercase;
+    }
+  }
+}
+
+.services{
+
+  & #we-ensure{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: ;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    scale: 1;
+  }
+
+  50%{
+    scale: .9;
+  }
+
+  100%{
+    scale: 1;
   }
 }
