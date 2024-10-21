@@ -175,11 +175,31 @@ body {
 }
 
 .services{
+  --padding: 1rem;
+  display: grid;
+  place-items: center;
+  
+  & .we-ensure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--padding);
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--bg-primary);
+    
+    & .row{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--padding);
+      max-width: 325px;
 
-  & #we-ensure{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: ;
+      &:nth-child(1){
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
