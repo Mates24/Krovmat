@@ -187,6 +187,7 @@ body {
     gap: var(--padding);
     width: 100%;
     padding: 2rem;
+    margin-bottom: var(--sections-gap);
     background-color: var(--bg-primary);
     
     & .row{
@@ -200,6 +201,36 @@ body {
         margin-bottom: 1rem;
       }
     }
+  }
+
+  & .our-services{
+    
+    & h2{
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    & .service{
+      max-width: 325px;
+      margin-bottom: 2rem;
+
+      & .img-wrapper{
+        max-width: 325px;
+        
+        & img{
+          width: 100%;
+          border-radius: 7px;
+        }
+      }
+
+      &:nth-child(odd){
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: right;
+      }
+    }
+
   }
 }
 
