@@ -254,6 +254,59 @@ body {
   }
 }
 
+.ask-question{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+
+  & h2{
+    position: relative;
+    max-width: 325px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    z-index: -1;
+    text-shadow: 10px 10px var(--bg-primary-05);
+  }
+
+  & form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & input,
+    textarea{
+      padding: .5rem;
+      min-width: 325px;
+      outline: none;
+      border: 2px solid var(--bg-primary);
+      border-radius: 5px;
+
+      &:focus{
+        border-color: var(--text-color-tertiary);
+      }
+    }
+
+    & textarea{
+      height: 6.2rem;
+      resize: none;
+    }
+
+    & input[type=submit]{
+      width: fit-content;
+      padding: 10px 20px;
+      font-weight: var(--text-weight-600);
+      background: var(--bg-primary);
+    }
+  }
+}
+
 @keyframes fadeIn{
   0%{
     scale: 1;
