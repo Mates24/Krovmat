@@ -27,12 +27,12 @@
           <li><a href="#gallery">Galéria</a></li>
           <li><a href="#foot">Kontakt</a></li>
         </ul>
-        <button class="menu-toggle">
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
       </nav>
+      <button class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </header>
     <main>
       <section class="banner" id="banner">
@@ -47,6 +47,8 @@
         <div class="about-img">
           <div class="img-wrapper">
             <img src="images/Pokrývačstvo.jpg" alt="Pokrývačstvo"/>
+            <div>25+ rokov</div>
+            <div>1000+ realizácii</div>
           </div>
         </div>
         <div class="about-text">
@@ -65,32 +67,16 @@
             <h2>Zaistíme pre Vás</h2>
           </div>
           <div class="row">
-            <div class="col">
-              <p>Kompletnú dodávku a odbornú pokládku</p>
-            </div>
-            <div class="col">
-              <p>Kompletné prevedienie klapmiarských prác</p>
-            </div>
-            <div class="col">
-              <p>Strešné okná ROTO, FAKRO a VELUX</p>
-            </div>
-            <div class="col">
-              <p>Kompletné tesárske práce</p>
-            </div>
+            <p>Kompletnú dodávku a odbornú pokládku</p>
+            <p>Kompletné prevedienie klapmiarských prác</p>
+            <p>Strešné okná ROTO, FAKRO a VELUX</p>
+            <p>Kompletné tesárske práce</p>
           </div>
           <div class="row">
-            <div class="col">
-              <p>Tepelné izolácie</p>
-            </div>
-            <div class="col">
-              <p>Chemická ochrana dreva</p>
-            </div>
-            <div class="col">
-              <p>Hydroizolácie rovných striech</p>
-            </div>
-            <div class="col">
-              <p>Kompletné výškové práce</p>
-            </div>
+            <p>Tepelné izolácie</p>
+            <p>Chemická ochrana dreva</p>
+            <p>Hydroizolácie rovných striech</p>
+            <p>Kompletné výškové práce</p>
           </div>
         </article>
         <article class="our-services">
@@ -148,7 +134,7 @@
       </section>
       <section class="gallery" id="gallery">
         <h2>Galéria</h2>
-        <div>
+        <div class="images">
           <img src="images/Foto 2.jpg" alt=""/>
           <img src="images/Foto 2.jpg" alt=""/>
           <img src="images/Foto 2.jpg" alt=""/>
@@ -164,8 +150,8 @@
       <div class="ask-question">
         <h2>Máte otázku?</h2>
         <form action="">
-          <input type="text" placeholder="Meno a priezvisko"/>
-          <input type="email" placeholder="Email"/>
+          <input type="text" placeholder="Meno a priezvisko" required/>
+          <input type="email" placeholder="Email" required/>
           <textarea name="message" placeholder="Vaše dotazy"></textarea>
           <input type="submit" value="Odoslať"/>
         </form>
