@@ -263,6 +263,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 4rem;
+  margin-bottom: var(--sections-gap);
 
   & h2{
     position: relative;
@@ -306,6 +307,42 @@ body {
       padding: 10px 20px;
       font-weight: var(--text-weight-600);
       background: var(--bg-primary);
+    }
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+
+  & .contact-info{
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    max-width: 325px;
+
+    & h3{
+      font-weight: var(--text-weight-600);
+      text-transform: uppercase;
+    }
+
+    & ul{
+      list-style: none;
+    }
+  }
+
+  & .contact-img{
+    max-width: 200px;
+  
+    & img{
+      width: 100%;
     }
   }
 }
